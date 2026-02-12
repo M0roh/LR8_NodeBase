@@ -8,10 +8,14 @@
   "type": "module",
   "main": "src/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node src/index.ts"
   },
   "dependencies": {
     "dotenv": "^17.2.4",
     "os": "^0.1.2"
+  },
+  "devDependencies": {
+    "@types/node": "^25.2.3",
+    "typescript": "^5.9.3"
   }
 }
