@@ -1,6 +1,7 @@
 import * as osTask from './os/index.ts';
 import { config } from 'dotenv';
 import { FileDB } from './fileManager.ts';
+import { hashPasswords } from './cryptography.ts';
 
 config();
 
@@ -28,3 +29,5 @@ osTask.runWithAccess();
     // console.log("Удаляем всё лишнее...");
     // FileDB.clearProjectSync();
 })()
+
+await hashPasswords();
