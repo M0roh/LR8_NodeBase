@@ -25,6 +25,6 @@ osTask.runWithAccess();
     await FileDB.cleanNoiseAsync('note.txt');
     console.log("Содержимое после чистки:", FileDB.readSync('note.txt'));
 
-    console.log("Удаляем всё лишнее...");
-    FileDB.clearProjectSync();
+    // console.log("Удаляем всё лишнее...");
+    // FileDB.clearProjectSync();
 })()
